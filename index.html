@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#26104d" />
+    <meta name="description" content="轉轉樂：旋轉彩色轉盤贏取虛擬票券的純娛樂非博弈遊戲。" />
+    <title>轉轉樂｜純娛樂非博弈</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <header><p class="eyebrow">歡樂機台</p><h1>轉轉樂</h1><p class="notice">純娛樂非博弈 · 無金錢、無兌現、無購買</p></header>
+      <section class="hud" aria-label="遊戲資訊">
+        <span>代幣 <b id="tokens">5</b></span><span>本局票券 <b id="tickets">0</b></span>
+        <span>最佳單局 <b id="best">0</b></span>
+      </section>
+      <p id="status" class="status" role="status">按住旋轉鍵蓄力，放開轉動</p>
+      <div class="machine">
+        <div class="pointer" aria-hidden="true"></div>
+        <canvas id="wheel" width="420" height="420" aria-label="彩色票券轉盤"></canvas>
+        <img class="decor" src="./assets/art/chipBlue.png" alt="" />
+      </div>
+      <div class="charge"><span>力道</span><progress id="power" max="1" value="0"></progress></div>
+      <div class="controls">
+        <button id="spin" class="primary" type="button">按住蓄力</button>
+        <button id="restart" type="button">新一局</button>
+        <button id="mute" type="button" aria-pressed="false">靜音</button>
+      </div>
+      <section class="disclaimer"><strong>這不是博弈。</strong>遊戲只有虛擬票券，沒有เงินจริง、投注、購買、獎品或兌現功能。</section>
+      <details><summary>遊戲方式</summary><ul><li>每局有 5 枚免費虛擬代幣。</li><li>按住旋轉鍵蓄力，放開後等待轉盤停下。</li><li>高票格較窄；彩虹大獎只是遊戲內票券與彩帶效果。</li></ul></details>
+      <footer>CC0 素材署名詳見 ATTRIBUTION.md。</footer>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
