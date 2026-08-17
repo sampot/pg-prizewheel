@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "rev": "c4c2116",
+  "files": [
+    "app.js",
+    "assets/art/chipBlue.png",
+    "assets/art/chipGreen_side.png",
+    "assets/art/chipRedWhite_sideBorder.png",
+    "assets/art/License-boardgame.txt",
+    "assets/art/License-roulette.txt",
+    "assets/art/roulette_casino.svg",
+    "assets/sfx/chip-lay-1.ogg",
+    "assets/sfx/chips-stack-1.ogg",
+    "assets/sfx/chipsCollide1.ogg",
+    "assets/sfx/chipsCollide2.ogg",
+    "assets/sfx/License-casino.txt",
+    "audio.js",
+    "functions.js",
+    "game.js",
+    "index.html",
+    "styles.css"
+  ]
+}
